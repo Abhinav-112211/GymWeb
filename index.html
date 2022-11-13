@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymProject</title>
+</head>
+<link rel="stylesheet" href="GymProject.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
+<style>
+    body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url('background.jpg.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 900px;
+        background-position: center;
+        color: white;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 93px;
+        filter: invert(100%);
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .mid {
+        display: block;
+        width: 38%;
+        margin: 20px auto;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 10px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgba(245, 245, 245, 0.692);
+    }
+
+    .navbar li a.active {
+        color: rgba(245, 245, 245, 0.692);
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 35px;
+    }
+
+    .btn {
+        padding: 5px 14px;
+        margin: 0px 2px;
+        cursor: pointer;
+        border: 2px solid gray;
+        color: white;
+        background-color: black;
+        border-radius: 19px;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .btn:hover {
+        background-color: rgb(71, 64, 64);
+    }
+
+    .container {
+        border: 2px solid white;
+        padding: 23px 20px;
+        margin: 110px 119px;
+        width: 30%;
+        border-radius: 25px;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        padding: 5px 10px;
+        margin: 6px auto;
+        width: 276px;
+        border-radius: 10px;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .container button {
+        display: block;
+        width: 79%;
+        margin: 14px auto;
+        font-family: 'Secular One', sans-serif;
+    }
+
+    .container h3 {
+        text-align: center;
+        font-family: 'Secular One', sans-serif;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <div>
+                <img src="logoofgym.png" alt="" width="23px
+            ">
+            </div>
+            <div class="name">
+                Bansal Fitness
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Centers</a></li>
+                <li><a href="#">Programs</a></li>
+                <li><a href="#">About Us</a></li>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the Best Gym of NCR now</h3>
+        <form action="noaction.php">
+            <div class="form-group"> <input type="text" placeholder="Enter Your Name"></input></div>
+            <div class="form-group"> <input type="text" placeholder="Enter Your Age"></input></div>
+            <div class="form-group"> <input type="text" placeholder="Enter Your Gender"></input></div>
+            <div class="form-group"> <input type="text" placeholder="Enter Your Address"></input></div>
+            <div class="form-group"> <input type="text" placeholder="Enter Your Contact Number"></input></div>
+
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
